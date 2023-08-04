@@ -11407,3 +11407,6 @@ textarea.form-control-lg {
     100% { opacity:1; }
 }
 
+.section-height{
+  height: 500px;
+}

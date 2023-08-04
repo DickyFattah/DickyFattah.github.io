@@ -4,25 +4,61 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Dicky's Portofolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <style>
         body{
             background-color: antiquewhite;
         }
+        .section-wrapper{
+          height: 500px !important; 
+          background-color: white !important;
+        }
+        .img-illustration{
+          height: 350px;
+          width: auto;
+        }
     </style>
   </head>
   <body>
-    <div class="container">
+    <section class="section-wrapper d-flex align-items-center">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-md-6 col-xl-6 col-xs-12">
+            <h2>MY PORTOFOLIO</h2>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-xl-6 col-xs-12 text-center">
+             <img class="img-illustration" src="illustration.svg" alt="illustration">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-wrapper">  
+      <div class="container">
         <div class="col-12 text-center">
             <div class="container">
-                <h3>My portofolio</h3>
+                <h3>My Career's Journey</h3>              
+                <p class="w-50 mx-auto">Throughout my career, I've been working with several companies and projects that have helped me to grow and develop my experience.</p>              
             </div>
         </div>
-        <a class="btn btn-primary" href="setara/index.html">Setara Project</a>
-        <a class="btn btn-primary"  href="keybun/index.html"> Keybun Project</a>
-    </div>
+        <div class="col-12 "> 
+          <div class="container w-75 mx-auto">
+            <div class=" row">
+              <div class="col-auto"> 
+                <a class="btn btn-primary"  target="_blank" href="setara/index.html">Setara Project</a>
+              </div>
+              <div class="col-auto"> 
+                <a class="btn btn-primary"  target="_blank"  href="keybun/index.html"> Keybun Project</a>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
