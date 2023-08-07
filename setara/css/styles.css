@@ -18,6 +18,9 @@
  .font-inter{
   font-family: 'Inter' !important;
  }
+ p{
+  font-family: 'Inter' !important;
+ }
 /* custom */
 .card-feature {
   
@@ -11409,4 +11412,19 @@ textarea.form-control-lg {
 
 .section-height{
   height: 500px;
+}
+.btn-nav-portof.active{
+  background-color: #f8f9fa!important ;
+  color: #000 !important;
+}
+.btn-nav-portof{
+  color: #f8f9fa !important;
+}
+
+.btn-nav-portof:hover{
+  color: #000 !important;
+  background-color: #ccfcfa !important ;
+}
+.nav-item{
+  padding: 5px;
 }
