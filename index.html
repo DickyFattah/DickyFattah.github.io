@@ -6,18 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dicky's Portofolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" type="text/css">
     <style>
         body{
-            background-color: antiquewhite;
+            background-color: rgb(255, 255, 77) !important;
         }
         .section-wrapper{
           height: 500px !important; 
-          background-color: white !important;
+          /* background-color: white !important; */
+          /* color: white; */
         }
         .img-illustration{
           height: 350px;
           width: auto;
+        }
+        .card-feature {
+            border-radius: 10px !important;
+            border: 1px solid black !important;
+            box-shadow: 4px 4px #BCDCD6, 4px 4px 0px 1px black;
+            background-color: white;
+            padding: 20px;
+        }
+        .card-feature:hover {
+            background-color: rgb(255, 255, 77) !important;
+        }
+        section.slider-section {
+            background: #7C0DBE none repeat scroll 0 0;
+            color: #fff;
+            height: 100%;
+        }
+        .single-slide h1 {
+            font-size: 30px;
+            margin: 0 0 35px;
+            text-transform: uppercase;
+        }
+        .single-slide {
+          display: table-cell;
+          height: 50vh;
+          text-align: center;
+          vertical-align: middle;
+          width: 50vw;
+        }
+        .owl-section {
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+        .single-slide p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        a.boxed-btn {
+            background: #fff none repeat scroll 0 0;
+            border-radius: 5px;
+            color: #222;
+            display: inline-block;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a.boxed-btn:hover {
+            opacity: 0.8;
+        }
+
+        .owl-dots div {
+            background: #fff none repeat scroll 0 0;
+            border-radius: 100%;
+            height: 15px;
+            margin: 11px 0;
+            width: 15px;
+        }
+        .owl-dots {
+            position: absolute;
+            right: 30px;
+            top: 43%;
+        }
+        .owl-dots div.active {
+          background: #222 none repeat scroll 0 0;
         }
     </style>
   </head>
@@ -25,19 +90,58 @@
     <section class="section-wrapper d-flex align-items-center">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-12 col-md-6 col-xl-6 col-xs-12">
+          <div class="col-12 col-md-3 col-xl-3 col-xs-12">
             <h2>MY PORTOFOLIO</h2>
-            <p>
+            <p style=" text-align: justify;">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div class="col-12 col-md-6 col-xl-6 col-xs-12 text-center">
+          <div class="col-12 col-md-1 col-xl-1 col-xs-12">
+            <p>&nbsp;</p>
+          </div>
+          <div class="col-12 col-md-4 col-xl-4 col-xs-12 text-center">
              <img class="img-illustration" src="illustration.svg" alt="illustration">
+          </div>
+          <div class="col-12 col-md-1 col-xl-1 col-xs-12">
+            <p>&nbsp;</p>
+          </div>
+          <div class="col-12 col-md-3 col-xl-3 col-xs-12">
+            <h2>MY PORTOFOLIO</h2>
+            <p style=" text-align: justify;">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-wrapper">  
+    <section class="section-wrapper" style="background-color: rgb(253, 253, 17) !important;">  
+      <div class="container pt-5 mt-5">      
+        <div class="row">
+          <div class="col-4 text-center">
+            <div class="card card-feature">
+              <div class="card-body">
+                Lorem ipsum    
+              </div>
+            </div>          
+          </div>
+          <div class="col-4 text-center">
+            <div class="card card-feature">
+              <div class="card-body">
+                Lorem ipsum    
+              </div>
+            </div>          
+          </div>
+          <div class="col-4 text-center">
+            <div class="card card-feature">
+              <div class="card-body">
+                Lorem ipsum    
+              </div>
+            </div>          
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-wrapper" style="background-color:#f1f2f5">  
       <div class="container">
         <div class="col-12 text-center">
             <div class="container">
@@ -59,6 +163,66 @@
         </div>
       </div>
     </section>
+    <section class="section-wrapper" style="background-color:#f1f2f5">  
+      <div class="container">
+          <section class="slider-section">
+            <div class="owl-section owl-active owl-carousel">
+                <div class="item single-slide">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="" class="boxed-btn">Read More</a>
+                </div>
+                <div class="item single-slide">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="" class="boxed-btn">Read More</a>
+                </div>
+                <div class="item single-slide">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="" class="boxed-btn">Read More</a>
+                </div>
+                <div class="item single-slide">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="" class="boxed-btn">Read More</a>
+                </div>
+                <div class="item single-slide">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <a href="" class="boxed-btn">Read More</a>
+                </div>
+            </div>
+          </section>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        center: true,
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn'
+        });
+        var owl = $('.owl-carousel');
+        owl.owlCarousel();
+        owl.on('translate.owl.carousel', function (event) {
+        $('.owl-carousel h1').removeClass('animated').hide();
+        $('.owl-carousel p').removeClass('animated').hide();
+        $('.owl-carousel .boxed-btn').removeClass('animated').hide();
+      })
+
+        owl.on('translated.owl.carousel', function (event) {
+            $('.owl-carousel h1').addClass('animated fadeInUp').show();
+            $('.owl-carousel p').addClass('animated fadeInDown').show();
+            $('.owl-carousel .boxed-btn').addClass('animated fadeInDown').show();
+        }) 
+    </script>
   </body>
 </html>
